@@ -12,12 +12,10 @@ class Solution {
 
                     int sum = i + j;
 
-                    // If sum not present, create new list
                     if (!map.containsKey(sum)) {
                         map.put(sum, new ArrayList<>());
                     }
 
-                    // Add restaurant to that sum
                     map.get(sum).add(list1[i]);
                 }
             }
